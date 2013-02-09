@@ -1,4 +1,3 @@
-
 backing up sparse files wastes a lot of tape. this script will recursively check all files and identify culprits.
 
 when the size of the file is way bigger than the total size occupied by the number of blocks it uses, then it is considered a sparse file.
@@ -7,14 +6,14 @@ Pletter Thomas's new and improved version: fs_checksparse.pl
 
 examples on how to use:
 
-	   Check SparseFiles Directory '/dir'  (works with blksize of Filesystem/Directory
+Check SparseFiles Directory '/dir'  (works with blksize of Filesystem/Directory
 
-			fs_checksparse.pl -d /dir
+	fs_checksparse.pl -d /dir
 
-		 Check SparseFiles of ORACLE-Filesystem(Directory) '/package/db01/SID_sid' with BlockSize 16384 of ORACLE Database SID
+Check SparseFiles of ORACLE-Filesystem(Directory) '/package/db01/SID_sid' with BlockSize 16384 of ORACLE Database SID
 
-		  fs_checksparse.pl -d /fs/SID -b 16384
+	fs_checksparse.pl -d /fs/SID -b 16384
 
-		 Check SparseFiles of Directories '/dir1', '/dir2' with Output
+Check SparseFiles of Directories '/dir1', '/dir2' with Output
 
-		  fs_checksparse.pl -d /dir1 /dir2 -v
+	fs_checksparse.pl -d /dir1 /dir2 -v
