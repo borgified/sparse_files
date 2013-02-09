@@ -3,3 +3,4 @@ backing up sparse files wastes a lot of tape. this script will recursively check
 
 when the size of the file is way bigger than the total size occupied by the number of blocks it uses, then it is considered a sparse file.
 
+Pletter Thomas's new and improved version: fs_checksparse.pl
